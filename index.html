@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Botanical Gardens | Visit</title>
+		<link rel="stylesheet" href="./css/shared.css">
+		<link rel="stylesheet" href="./css/animations.css">
+		<script src="js/onepage.js" defer></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+	
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>JOIN</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div class="container"> 
+				<div class="text-center">
+					<span class="head-main">Botanical Gardens</span>
+					<br/>
+					<span class="head-sub-main">Anytown, NY</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- GALLERY -->
+		
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="row">
+					<div class="column">
+					  <img src="images/thumb/thumb_5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_7.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_8.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_9.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+				  </div>
+			</div>	
+		</section>
+		<div id="myModal" class="modal">
+			<button class="close" onclick="closeModal()">X</button>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="images/thumb/pic_5.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="images/thumb/pic_7.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="images/thumb/pic_8.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="images/thumb/pic_9.jpg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Rock Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Our Formal Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_8.jpg" style="width:100%" onclick="currentSlide(3)" alt="Our Wildflower Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_9.jpg" style="width:100%" onclick="currentSlide(4)" alt="Our Rose Garden">
+			  </div>
+			</div>
+		  </div>
+		  
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Join</h1>
+					<div class="reservation">
+						<h2> <span>Support our gardens by becoming a member</span>
+							<br/> And enjoy many exclusive benefits!
+						</h2>
+						<p class="rsvp-text">
+						Please fill out the form below to get started.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- END RSVP -->
+	
+		<!-- BEGIN FOOTER-->
+		<div id="footer">
+			www.thebotanicalgardens.com &nbsp;|&nbsp; &copy; 2023
+		</footer>
+		<!-- END FOOTER -->
+	</body>
+</html>
